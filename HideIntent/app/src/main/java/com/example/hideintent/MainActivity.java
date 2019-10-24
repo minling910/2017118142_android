@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("http://www.baidu.com"));
-
+                startActivity(intent);
             }
         });
         Button button2 = (Button) findViewById(R.id.button2);
@@ -29,16 +29,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(Intent.ACTION_DIAL);
                 intent.setData(Uri.parse("tel:10086"));
+                startActivity(intent);
 
             }
         });
         Button button3 = (Button) findViewById(R.id.button3);
-        button1.setOnClickListener(new View.OnClickListener() {
+        button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("geo:"));
-
+                startActivity(intent);
             }
         });
     }
