@@ -1,33 +1,11 @@
-package com.example.program.ui.login;
-
-import android.app.Activity;
-
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+package com.example.login;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.view.KeyEvent;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.program.BaseActivity;
-import com.example.program.MainActivity;
-import com.example.program.R;
-import com.example.program.ui.login.LoginViewModel;
-import com.example.program.ui.login.LoginViewModelFactory;
 
 public class LoginActivity extends BaseActivity {
     private EditText accountEdit;

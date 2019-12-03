@@ -1,6 +1,5 @@
-package com.example.program;
+package com.example.login;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -12,7 +11,6 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.program.ui.login.LoginActivity;
 
 public class BaseActivity extends AppCompatActivity {
     private ForceOfflineReceiver receiver;
